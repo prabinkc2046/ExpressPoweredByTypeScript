@@ -25,7 +25,7 @@ router.post(
       eventEmitter.emit('productAdded', newProduct);
       // log it
 
-      res.status(201).json({ newProduct });
+      res.status(201).send('accetped');
     } catch (error) {
       console.log(error);
       next(error);
